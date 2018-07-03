@@ -1,0 +1,10 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+h1 > div {
+  margin: 0 10px;
+}

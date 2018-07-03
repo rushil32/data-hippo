@@ -1,0 +1,23 @@
+.TextDropdown button {
+  background: none;
+  border: none;
+  border-bottom: 3px solid black;
+  font-weight: bold;
+}
+
+.TextDropdown button:hover {
+  cursor: pointer;
+}
+
+.TextDropdown button:focus {
+  outline: none;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.TextDropdown i {
+  margin-left: 5px;
+  font-size: 32px;
+}

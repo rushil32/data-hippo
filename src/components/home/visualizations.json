@@ -1,0 +1,37 @@
+[
+  {
+    "category": "sports",
+    "icon": "bar_chart",
+    "key": "nba-dynasties",
+    "title": "The best and worst of every NBA team",
+    "description": "How do the Warriors stack up against other team's best runs? (Spoiler, not too bad)"
+  },
+  {
+    "category": "SPORTS",
+    "icon": "bubble_chart",
+    "key": "nba-draft",
+    "title": "15 Years of the NBA draft (2000 - 2015)",
+    "description": "Which team had the most success finding talent?"
+  },
+  {
+    "category": "consectetur",
+    "icon": "bar_chart",
+    "key": "test2",
+    "title": "Sed ut perspiciatis unde test",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+  },
+  {
+    "category": "consectetur",
+    "icon": "bar_chart",
+    "key": "test3",
+    "title": "Sed ut perspiciatis unde random",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+  },
+  {
+    "category": "consectetur",
+    "icon": "bar_chart",
+    "key": "test4",
+    "title": "Sed ut perspiciatis unde random",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+  }
+]

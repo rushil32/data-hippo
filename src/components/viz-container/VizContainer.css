@@ -1,0 +1,21 @@
+.VizContainer {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  animation-duration: 0.4s;
+  overflow: auto;
+}
+
+.close-icon {
+  align-self: flex-end;
+  margin: 20px 20px 10px;
+  opacity: 0.6;
+}
+
+.close-icon:hover {
+  cursor: pointer;
+  opacity: 1;
+}
