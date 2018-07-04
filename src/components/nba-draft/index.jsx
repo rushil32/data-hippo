@@ -73,15 +73,17 @@ class NbaDraft extends Component {
             handleClick={this.setOption} 
           /> 
         </h1>
-        <ScatterPlot
-          data={this.getData(selected)}
-          height={550}
-          width={800}
-          xField={'pk'}
-          xLabel={'Draft Pick'}
-          yField={option.field}
-          yLabel={option.label}
-        />
+        <div class="card">
+          <ScatterPlot
+            data={this.getData(selected)}
+            height={550}
+            width={800}
+            xField={'pk'}
+            xLabel={'Draft Pick'}
+            yField={option.field}
+            yLabel={option.label}
+          />
+        </div>
       </div>
     )
   }

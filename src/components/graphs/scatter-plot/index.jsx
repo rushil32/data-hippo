@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { scaleLinear } from 'd3-scale';
 import { select, event } from 'd3-selection';
 import { axisLeft, axisBottom } from 'd3-axis';
-import { extent, max, min } from 'd3-array';
+import { extent, max } from 'd3-array';
 import { transition } from 'd3-transition';
 import './index.css';
 
@@ -25,7 +25,7 @@ class ScatterPlot extends Component {
     const chartHeight = this.props.height;
     const chartWidth = this.props.width;
 
-    const margin = {top: 20, right: 15, bottom: 60, left: 60}, 
+    const margin = {top: 20, right: 10, bottom: 20, left: 20}, 
         width = chartWidth - margin.left - margin.right,
         height = chartHeight - margin.top - margin.bottom;
 
@@ -46,12 +46,36 @@ class ScatterPlot extends Component {
       .style('opacity', 0);
     
     const tooltipHtml = (data) => {
-      return `
+      let tipHtml =  `
         <h6>${data.player}</h6>
         <span><b>Pick:</b> ${data.pk}</span>
         <span><b>Year:</b> ${data.draft_yr}</span>
         <span><b>${yLabel}</b> ${data[yField]}</span>
       `;
+
+      if (data.mvp) {
+        tipHtml += `<span><b>MVP Awards</b> ${data.mvp}</span>`;
+      }
+
+      if (data.dpoy) {
+        tipHtml += `<span><b>DPOY Awards</b> ${data.dpoy}</span>`;
+      }
+
+      return tipHtml;
+    };
+
+    const addLegendItem = (color, text, index, ele) => {
+      ele.append('rect')
+        .attr('x', '-120')
+        .attr('y', (30 * index))
+        .attr('fill', color)
+        .attr('height', '10')
+        .attr('width', '10');
+
+      ele.append('text')
+        .attr('x', '-100')
+        .attr('y', 10 + (30 * index))
+        .text(text);
     };
 
     const showTooltip = (data) => {
@@ -64,6 +88,18 @@ class ScatterPlot extends Component {
     const hideTooltip = () => {
       tooltip.style('opacity', 0);	
     };
+
+    function make_x_axis() {        
+      return axisBottom()
+          .scale(x)
+           .ticks(5)
+    }
+  
+  function make_y_axis() {        
+    return axisLeft()
+        .scale(y)
+        .ticks(5);
+    }
 
     data.forEach(player => {
       const RANGE = 0.10;
@@ -83,7 +119,7 @@ class ScatterPlot extends Component {
 
     main.append('g')
       .attr('transform', 'translate(0,' + height + ')')
-      .attr('class', 'main axis date')
+      .attr('class', 'main axis')
       .call(xAxis);
     
     const yAxis = axisLeft()
@@ -93,6 +129,14 @@ class ScatterPlot extends Component {
       .attr('transform', 'translate(0,0)')
       .attr('class', 'main axis date')
       .call(yAxis);
+    
+    const legend = main.append('g')
+      .attr('transform', `translate(${width},20)`)
+      .attr('class', 'legend');
+    
+    addLegendItem('#ff6b81', 'MVP / DPOY', 0, legend);
+    addLegendItem('#7bed9f', 'All Star', 1, legend);
+    addLegendItem('#1e90ff', 'No Awards', 2, legend);
     
     main.append('text')
       .attr('class', 'label')
@@ -111,6 +155,21 @@ class ScatterPlot extends Component {
     
     const g = main.append('svg:g'); 
 
+    g.append('g')         
+      .attr('class', 'grid')
+      .attr('transform', 'translate(0,' + height + ')')
+      .call(make_x_axis()
+          .tickSize(-height, 0, 0)
+          .tickFormat('')
+      );
+
+    g.append('g')         
+      .attr('class', 'grid')
+      .call(make_y_axis()
+          .tickSize(-width, 0, 0)
+          .tickFormat('')
+      );
+
     const dots = g.selectAll('scatter-dots')
       .data(data)
       .enter().append('svg:circle')
@@ -118,10 +177,13 @@ class ScatterPlot extends Component {
         .attr('cy', height)
         .style('opacity', 0)
         .style('fill', d => {
-          if (d.all_star > 0) {
-            return 'red';
+          if (d.mvp || d.dpoy) {
+            return '#ff6b81';
           }
-          return 'blue';
+          else if (d.all_star > 0) {
+            return '#7bed9f';
+          }
+          return '#1e90ff';
         })
         .on('mouseover', player => showTooltip(player))
         .on('mouseout', hideTooltip)

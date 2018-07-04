@@ -1,18 +1,26 @@
 .ScatterPlot {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
 }
 
 .ScatterPlot circle {
-  fill-opacity: .5;
+  fill-opacity: .75;
   fill: #1e90ff;
 }
 
 .ScatterPlot line,
 .ScatterPlot text,
 .ScatterPlot path {
-  opacity: 0.75;
+  opacity: 0.55;
+}
+
+.ScatterPlot .axis path, .ScatterPlot .axis line {
+  stroke-width: 2px;
+  opacity: 0.15;
+}
+
+.ScatterPlot text {
+  font-weight: bold;
 }
 
 .ScatterPlot circle:hover {
@@ -28,7 +36,8 @@
   border: 1px solid #e5e5e5;
   border-radius: 3px;
   pointer-events: none;
-  box-shadow: 0px 0px 2px 0 rgba(0,0,0,0.10);
+  border: 1px solid rgba(0,0,0,0.12);
+  color: rgba(0,0,0,0.75);
 }
 
 .ScatterPlot .tooltip span {
@@ -40,3 +49,11 @@
 .ScatterPlot .tooltip h3 {
   text-align: left;
 }
+
+.ScatterPlot .grid .tick {
+  opacity: 0.15;
+}
+.ScatterPlot .grid path {
+    stroke-width: 0;
+}
+

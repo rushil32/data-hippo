@@ -45,6 +45,7 @@ class NbaDynasties extends Component {
 
   formatData = (data) => {
     if (!data.length) return [];
+
     const formattedData = data.map(team => Object.values(team));
     const barColor = this.state.type === 'best' ? '#1e90ff' : '#ff6b81';
 
@@ -84,7 +85,9 @@ class NbaDynasties extends Component {
           <TextDropdown options={yearOptions} active={years} handleClick={this.setYears} /> 
           years
         </h1>
-        <Table headers={this.headers} data={formattedData} />
+        <div class="card">
+          <Table headers={this.headers} data={formattedData} />
+        </div>
       </div>
     )
   }
