@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="778px" height="137px" viewBox="0 0 778 137" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(0.000000, -7.000000)">
+            <text id="DATAHIPPO" font-family="SourceSansPro-ExtraLight, Source Sans Pro" font-size="120" font-weight="300" fill="#FFFFFF">
+                <tspan x="175.54" y="118">DATA</tspan>
+                <tspan x="434.74" y="118" font-family="SourceSansPro-Black, Source Sans Pro" font-weight="700">HIPPO</tspan>
+            </text>
+            <g id="hippo-(2)" transform="translate(0.000000, 7.000000)" fill-rule="nonzero">
+                <circle id="Oval" fill="#FCCC32" cx="68" cy="69" r="68"></circle>
+                <path d="M116.165803,20 C142.611399,46.645309 142.611399,89.4525266 116.165803,116.097836 C89.7202073,142.743145 46.6641545,142.52474 20,116.097836" id="Shape" fill="#EFAE0C"></path>
+                <rect id="Rectangle-path" fill="#DDDAC0" x="31" y="117" width="11" height="15"></rect>
+                <polyline id="Shape" fill="#C6C2A7" points="31 117 42 117 42 132"></polyline>
+                <rect id="Rectangle-path" fill="#DDDAC0" x="95" y="117" width="11" height="15"></rect>
+                <polyline id="Shape" fill="#C6C2A7" points="95 117 106 117 106 132"></polyline>
+                <polygon id="Shape" fill="#A1B7B6" points="117 113.31758 68 137 19 113.31758 32.34375 46.8752363 68 21 103.65625 46.8752363"></polygon>
+                <polyline id="Shape" fill="#8EA5A3" points="68 21 103.65625 49.0680529 117 113.31758 68 137"></polyline>
+                <polygon id="Shape" fill="#A1B7B6" points="30 31.6634845 68.5 13 107 31.6634845 96.559322 82.6038186 68.5 105 40.440678 82.6038186"></polygon>
+                <g id="Group" transform="translate(29.000000, 13.000000)" fill="#8EA5A3">
+                    <polygon id="Shape" points="0.218291568 18.8380952 38.855899 31.7619048 77.4935065 18.8380952 67.0155112 38.1142857 38.855899 60.2380952 10.6962868 38.1142857"></polygon>
+                    <polyline id="Shape" points="38.855899 0.219047619 77.4935065 18.8380952 67.0155112 69.6571429 38.855899 92"></polyline>
+                </g>
+                <polyline id="Shape" fill="#829996" points="68 44.7989418 107 32 103.474576 48.2698413 68 73"></polyline>
+                <polygon id="Shape" fill="#A1B7B6" points="40.1111111 24 29 15.1926606 40.1111111 0 51 15.1926606"></polygon>
+                <polyline id="Shape" fill="#8EA5A3" points="40 0 51 15.1926606 40 24"></polyline>
+                <polygon id="Shape" fill="#829996" points="96.8888889 24 86 15.1926606 96.8888889 0 108 15.1926606"></polygon>
+                <polyline id="Shape" fill="#8EA5A3" points="96 0 107 15.1926606 96 24"></polyline>
+                <polygon id="Shape" fill="#5E6664" points="53 52 42 48.5909091 42 42 53 45.6363636"></polygon>
+                <polyline id="Shape" fill="#2F423F" points="53 46 53 52 42 48.7857143"></polyline>
+                <polygon id="Shape" fill="#5E6664" points="84 52 95 48.5909091 95 42 84 45.6363636"></polygon>
+                <polyline id="Shape" fill="#2F423F" points="84 52 95 48.5909091 95 42"></polyline>
+                <g id="Group" transform="translate(44.000000, 107.000000)" fill="#5E6664">
+                    <polygon id="Shape" points="19.6338983 13.8352941 19.6338983 13.8352941 10.5220339 0.219607843 0.108474576 6.14901961 0.108474576 6.36862745"></polygon>
+                    <polygon id="Shape" points="28.3118644 13.8352941 28.3118644 13.8352941 37.4237288 0.219607843 47.8372881 6.14901961 47.8372881 6.36862745"></polygon>
+                </g>
+                <polyline id="Shape" fill="#7B918D" points="68 73.1198738 110.875 116 117 112.952681 103.65625 47"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

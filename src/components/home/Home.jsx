@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import visualizations from './visualizations.json'
 import HomeItem from './HomeItem';
+import logo from '../../assets/images/logo.svg';
 
 import './Home.css';
 
@@ -10,7 +11,12 @@ const Home = () => {
   
   return (
     <div className="Home">
-      { items }
+      <div className="logo">
+        <img src={logo} />
+      </div>
+      <div class="Home-grid">
+        { items }
+      </div>
     </div>
   );
 };
