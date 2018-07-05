@@ -10,28 +10,14 @@
     "category": "SPORTS",
     "icon": "bubble_chart",
     "key": "nba-draft",
-    "title": "15 Years of the NBA draft (2000 - 2015)",
+    "title": "15 years of the NBA draft (2000 - 2015)",
     "description": "Which late picks had the most success in the league?"
   },
   {
-    "category": "consectetur",
-    "icon": "bar_chart",
-    "key": "test2",
-    "title": "Sed ut perspiciatis unde test",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-  },
-  {
-    "category": "consectetur",
-    "icon": "bar_chart",
-    "key": "test3",
-    "title": "Sed ut perspiciatis unde random",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-  },
-  {
-    "category": "consectetur",
-    "icon": "bar_chart",
-    "key": "test4",
-    "title": "Sed ut perspiciatis unde random",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    "category": "ENVIRONMENT",
+    "icon": "bubble_chart",
+    "key": "global-warming",
+    "title": "Global Warming for dummies",
+    "description": "Yes, temperature has fluctuated before, but this time it's different"
   }
 ]

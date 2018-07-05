@@ -16,17 +16,17 @@ const VizContainer = ({ match }) => {
     case 'nba-draft': 
       viz = <NbaDraft />; break;
     default:
-      viz = <p>No Viz selected</p>;
+      viz = <h3>Viz coming soon</h3>;
   }
 
   return (
-    <div className="VizContainer animated fadeIn">
+    <div className="VizContainer animated fadeInUp">
       <Link to="/" className="close-icon">
         <i className="material-icons">close</i>
       </Link>
       {viz}
     </div>
-  )
-}
+  );
+};
  
 export default VizContainer;
