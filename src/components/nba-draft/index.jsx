@@ -73,7 +73,7 @@ class NbaDraft extends Component {
             handleClick={this.setOption} 
           /> 
         </h1>
-        <div class="card">
+        <div class="dash-card">
           <ScatterPlot
             data={this.getData(selected)}
             height={550}

@@ -25,7 +25,7 @@ class ScatterPlot extends Component {
     const chartHeight = this.props.height;
     const chartWidth = this.props.width;
 
-    const margin = {top: 20, right: 10, bottom: 20, left: 20}, 
+    const margin = {top: 20, right: 10, bottom: 20, left: 30}, 
         width = chartWidth - margin.left - margin.right,
         height = chartHeight - margin.top - margin.bottom;
 
@@ -79,6 +79,7 @@ class ScatterPlot extends Component {
     };
 
     const showTooltip = (data) => {
+      console.log(event);
       tooltip.style('opacity', .9);		
       tooltip.html(tooltipHtml(data))
         .style('left', (event.pageX) + 10 + 'px')		

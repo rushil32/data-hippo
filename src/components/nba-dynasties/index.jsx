@@ -85,7 +85,7 @@ class NbaDynasties extends Component {
           <TextDropdown options={yearOptions} active={years} handleClick={this.setYears} /> 
           years
         </h1>
-        <div class="card">
+        <div class="dash-card">
           <Table headers={this.headers} data={formattedData} />
         </div>
       </div>
